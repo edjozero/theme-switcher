@@ -21,7 +21,7 @@ const themesButton = document.querySelector("#theme-switcher-button");
 
 const themeDropdown = document.querySelector("#theme-dropdown");
 
-const themeStatus = document.querySelector("#theme-status");
+const statusMessage = document.querySelector("#status");
 
 
 function openThemes() {

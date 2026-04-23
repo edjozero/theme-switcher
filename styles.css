@@ -18,23 +18,3 @@ li {
   min-height: 20px;
 }
 
-#theme-light{
-  background: #fff;
-  color: #000;
-}
-
-#theme-dark{
-  background: #000;
-  color: #fff;
-}
-
-#theme-red{
-  background: #ff0000;
-  color: #fff;
-}
-
-#theme-ocean{
-  background: #0077be;
-  color: #fff;
-}
-
