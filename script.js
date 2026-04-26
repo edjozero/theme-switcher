@@ -43,3 +43,18 @@ themesButton.addEventListener("click", () => {
         closeThemes();
     }
 });
+
+themeDropdown.addEventListener("click", () => {
+    const themeName = event.target.textContent;
+    const theme = themes.find(theme => theme.name === themeName);
+
+    const body = document.querySelector("body");
+    body.setAttribute("class", "theme-" + theme.name.toLowerCase());
+
+    const message = document.createElement("h3");
+    message.textContent = theme.message;
+    statusMessage.innerHTML = "";
+    statusMessage.appendChild(message);
+    
+    closeThemes();
+});
