@@ -1,18 +1,18 @@
 const themes = [
     {
-        name: "Light",
+        name: "light",
         message: "Let there be light!"
     },
     {
-        name: "Dark",
+        name: "dark",
         message: "You merely adopted the darkness, I was born in it."
     },
     {
-        name: "Red",
+        name: "red",
         message: "Vader is near."
     },
     {
-        name: "Ocean",
+        name: "ocean",
         message: "Aloha brutha, get to the water."
     }
 ];
@@ -49,7 +49,7 @@ themeDropdown.addEventListener("click", () => {
     const theme = themes.find(theme => theme.name === themeName);
 
     const body = document.querySelector("body");
-    body.setAttribute("class", "theme-" + theme.name.toLowerCase());
+    body.setAttribute("class", "theme-" + theme.name);
 
     const message = document.createElement("h3");
     message.textContent = theme.message;
